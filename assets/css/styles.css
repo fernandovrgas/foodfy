@@ -85,9 +85,26 @@ nav a:hover {
 	right: 100px;
 }
 
-h2 {
+#maisAcessados {
 	margin-bottom: 20px;
 }
+
+#sobre {
+	margin-top: 50px;
+}
+
+#sobre h2 {
+	margin: 20px 0;
+}
+
+#sobre p {
+	font-family: Roboto-Regular;
+	font-size: 18px;
+	color: #444444;
+	line-height: 28px;
+	margin-bottom: 30px;
+}
+
 /*=== CARDS ===*/
 .cards {
     width: 100%;
