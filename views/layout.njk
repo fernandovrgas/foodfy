@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		{% block head %}
+			<title>Foodfy</title>
+		{% endblock %}
+
+        <link type="text/css" rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <div id="wrapper">
+			<header>
+				<nav>
+					<a href="/"><img src="img/logo.png" alt="Foodfy - Logo" /></a>
+					<a href="/sobre">Sobre</a>
+					<a href="/receitas">Receitas</a>
+				</nav>
+			</header>
+
+			{% block content %}{% endblock  %}
+
+			<footer><p>Todos os direitos reservados, receitas Foodfy</p></footer>
+
+			<div class="modal-overlay">
+				<div class="modal">
+					<img src="" alt="">
+					<p class="modal-title"></p>
+					<legend class="modal-legend">por Jorge Relato</legend>
+
+					<a class="close-modal">Fechar Modal</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/scripts.js"></script>
+    </body>
+</html>
