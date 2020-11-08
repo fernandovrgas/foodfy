@@ -5,6 +5,7 @@ const express = require('express'),
 
 routes.get('/', receitas.index);
 routes.get('/receitas', receitas.lista);
+routes.get('/receitas/:index', receitas.show);
 
 routes.get('/sobre', function(req,res) {
 	return res.render('sobre');

@@ -1,7 +1,33 @@
+const data = require('../data');
+
 exports.index = function(req,res) {
-	return res.render('receitas/index');
+	const limit = 5;
+	const receitas = [];
+
+	data.forEach((element, index) => {
+		if (index <= limit) {
+			element.index = index;
+			receitas.push(element);
+		}
+	});
+
+	return res.render('receitas/index', { receitas });
 }
 
 exports.lista = function(req,res) {
-	return res.render('receitas/lista');
+	const receitas = [];
+
+	data.forEach((element, index) => {
+		element.index = index;
+		receitas.push(element);
+
+	});
+
+	return res.render('receitas/lista', { receitas });
+}
+
+exports.show = function(req, res) {
+	const recipeIndex = req.params.index;
+
+	console.log(data[recipeIndex]);
 }
