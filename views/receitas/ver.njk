@@ -1,5 +1,10 @@
 {% extends "layout.njk" %}
 
 {% block content %}
+	{{ receita.image }}
 	{{ receita.title }}
+	{{ receita.author }}
+	{{ receita.ingredients }}
+	{{ receita.preparation }}
+	{{ receita.information }}
 {% endblock content %}
