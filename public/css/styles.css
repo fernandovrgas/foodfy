@@ -43,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--color-gren);
+    color: var(--color-greEn);
     transition: color 200ms;
 }
 
@@ -130,7 +130,7 @@ nav a:hover {
     margin-top: 5%;
 }
 
-.card__infop p {
+.card__info p {
 	font-family: Roboto-Regular;
 	font-size: 18px;
 	color: var(--color-text);
@@ -157,73 +157,55 @@ footer p {
 	padding-top: 25px;
 }
 
-/*=== MODAL ===*/
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.modal {
+.detalheReceita {
 	background-color: white;
 	border-radius: 15px;
 	border-radius: 15px;
-    width: 660px;
-    height: 413px;
-	margin: 15% auto;
-	text-align: center;
-	position: relative;
 }
 
-.modal img {
+.detalheReceita img {
 	border-radius: 15px;
 	border-radius: 15px;
-	width: 600px;
-    height: 200px;
-	margin: 20px 20px;
 }
 
-.modal-title {
-    font-family: Roboto-Regular;
-	font-size: 24px;
+.detalheReceita-title {
+	font-family: Roboto-Bold;
+	font-size: 36px;
 	color: var(--color-text);
+	text-align: center;
 }
 
-.modal-legend {
+.detalheReceita-legend {
 	font-family: Roboto-Regular;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 38px;
 	color: var(--color-text-legenda);
 	text-align: center;
 }
 
-.modal .card__info .card__legenda {
+.detalheReceita .content h2 {
+	font-family: 'Roboto-Bold';
+	font-size: 24px;
+	line-height: 38px;
+	margin-bottom: 10px;
+}
+
+.detalheReceita .content p, ul {
 	margin-top: 1.7%;
+	margin-bottom: 1.7%;
+	line-height: 28px;
 	font-family: Roboto-Regular;
-	font-size: 14px;
-	color: var(--color-text-legenda);
+	font-size: 18px;
+	color: #444444;
 }
 
-.modal .close-modal {
-	position:absolute;
-	width:100%;
-	font-family: Roboto-Regular;
-	font-size: 16px;
-    color: var(--color-text-legenda);
-	cursor: pointer;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	bottom:30px;
+.detalheReceita .content li {
+	margin-left: 25px;
 }
 
-/*=== MODAL.ACTIVE ===*/
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
+.detalheReceita .content a {
+	font-family: Roboto-Bold;
+	font-size: 12px;
+	color: var(--color-text-footer);
+	text-decoration: none;
 }

@@ -28,8 +28,5 @@ exports.lista = function(req,res) {
 
 exports.show = function(req, res) {
 	const receita = data[req.params.index];
-	
-	console.log(receita);
-
 	return res.render('receitas/ver', { receita });
 }
