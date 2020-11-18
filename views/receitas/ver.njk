@@ -8,8 +8,8 @@
 		<p class="detalheReceita-legend">por {{ receita.author }}</p>
 
 		<div class="content" id="ingredients">
-			<h2>Ingredientes <a id="" href="#">ESCONDER</a></h2>
-			<ul>
+			<h2>Ingredientes <a id="ingredientsButton" class="linkItemReceita" visible="true">ESCONDER</a></h2>
+			<ul id="ingredientsButtonContent">
 				{% for ingredient in receita.ingredients %}
 					<li>{{ ingredient }}</li>
 				{% endfor %}
@@ -17,13 +17,13 @@
 		</div>
 
 		<div class="content" id="preparation">
-			<h2>Modo de preparo <a id="" href="#">ESCONDER</a></h2>
-			<p> {{ receita.preparation }} </p>
+			<h2>Modo de preparo <a id="preparationButton" class="linkItemReceita" visible="true" href="#">ESCONDER</a></h2>
+			<p id="preparationButtonContent"> {{ receita.preparation }} </p>
 		</div>
 
 		<div class="content" id="information">
-			<h2>Informações adicionais <a id="" href="#">ESCONDER</a></h2>
-			<p> {{ receita.information }} </p>
+			<h2>Informações adicionais <a id="informationButton" class="linkItemReceita" visible="true" href="#">ESCONDER</a></h2>
+			<p id="informationButtonContent"> {{ receita.information }} </p>
 		</div>
 	</section>
 {% endblock content %}

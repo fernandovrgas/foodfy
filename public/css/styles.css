@@ -209,3 +209,7 @@ footer p {
 	color: var(--color-text-footer);
 	text-decoration: none;
 }
+
+.linkItemReceita {
+	cursor: pointer;
+}
