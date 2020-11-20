@@ -1,8 +1,8 @@
 const express = require('express'),
-      nunjucks = require('nunjucks'),
-	  routes = require('./routes'),
-	  server = express(),
-	  methodOverride = require('method-override')
+	nunjucks = require('nunjucks'),
+	routes = require('./routes'),
+	server = express(),
+	methodOverride = require('method-override')
 ;
 
 server.use(express.urlencoded({ extended: true }));
