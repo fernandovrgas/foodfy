@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		{% block head %}
+			<title>Foodfy</title>
+		{% endblock %}
+
+        <link type="text/css" rel="stylesheet" href="/css/adminStyles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <header>
+			<nav><a href="/"><img src="/img/logoBranca.png" alt="Foodfy - Logo" /></a></nav>
+		</header>
+
+        <div id="wrapper">
+			{% block content %}{% endblock  %}
+		</div>
+		
+		<script src="/js/scripts.js"></script>
+    </body>
+</html>
