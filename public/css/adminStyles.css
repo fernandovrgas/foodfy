@@ -41,62 +41,12 @@ nav a img {
 	margin: 0 auto;
 }
 
-#banner {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 0px 0px;
-	background: var(--color-pink);
-	border-radius: 30px;
-	border-radius: 30px;
-	height: 366px;
-	position: relative;
-	margin-bottom: 50px;
-}
-
-#banner .content {
-	margin-top: 117px;
-	margin-left: 60px;
-}
-
-#banner .content h2 {
-	font-family: 'Roboto-Bold';
-	font-size: 32px;
-	line-height: 38px;
-	margin-bottom: 10px;
-}
-
-#banner .content p {
-	font-family: 'Roboto-Regular';
-	font-size: 18px;
-	line-height: 28px;
-	opacity: 0.7;
-	max-width: 316px;
-}
-
-#banner img {
-	position: absolute;
-	bottom: 0px;
-	right: 100px;
-}
-
-#maisAcessados {
-	margin-bottom: 20px;
-}
-
-#sobre {
+h1 {
 	margin-top: 50px;
-}
-
-#sobre h2 {
-	margin: 20px 0;
-}
-
-#sobre p {
-	font-family: Roboto-Regular;
-	font-size: 18px;
-	color: #444444;
-	line-height: 28px;
 	margin-bottom: 30px;
+	font-family: Roboto-Bold;
+	font-size: 24px;
+	color: var(--color-text);
 }
 
 /*=== CARDS ===*/

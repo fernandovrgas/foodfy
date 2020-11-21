@@ -1,28 +1,19 @@
 {% extends "layoutAdmin.njk" %}
 
 {% block content %}
-	<div class="card table-container">
-		<a href="/recipes/create">Novo</a>
-		<table width="100%">
-			<thead>
-				<tr>
-					<th>Instructor</th>
-					<th>Atendimento</th>
-					<th>Ação</th>
-				</tr>
-			</thead>
-			<tbody>
-				{% for recipe in recipes %}
-				<tr>
-					<td>
-						<span style='background-image: url({{ recipe.avatar_url }})'></span>
-						{{ recipes.name }}
-					</td>
-					<td>{{ instructor.services }}</td>
-					<td><a href="/recipes/{{recipe.id}}">ver</a></td>
-				</tr>
-				{% endfor %}
-			</tbody>
-		</table>
-	</div>
+	<h1>Gerenciar receitas</h1>
+	<section class="cards">
+		{% for recipe in recipes %}
+			<div class="card">
+				<div class="card__image-container">
+					<img src="{{ recipe.image }}" alt="Foodfy - {{ recipe.title }}">
+				</div>
+
+				<div class="card__info">
+					<p><a href="/recipes/{{ recipe.index }}">{{ recipe.title }}</a></p>
+					<legend class="card__legenda">{{ recipe.author }}</legend>
+				</div>
+			</div>
+		{% endfor %}
+	</section>
 {% endblock content %}
