@@ -49,6 +49,52 @@ h1 {
 	color: var(--color-text);
 }
 
+/* FORM */
+input, select {
+	background: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 18px;
+	height: 45px;
+	width: 100%;
+}
+
+input[type="radio"] {
+	width:initial;
+	margin-right: 4px;
+}
+
+input::placeholder {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.item span {
+	font-family: Roboto-Bold;
+	font-size: 16px;
+	color: #111111;
+}
+
+button[type="submit"],
+a.button {
+	padding: 8px 32px;
+	background-color: var(--primary-color);
+	color: white;
+	border-radius: 4px;
+	margin-top: 32px;
+	width: 100%;
+	font-size: 16px;
+}
+
+a.button {
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+}
+
 /*=== CARDS ===*/
 .cards {
     width: 100%;
