@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
 
 :root {
 	--color-background: #fff;
@@ -50,7 +50,7 @@ h1 {
 }
 
 /* FORM */
-input, select {
+input, select, textarea {
 	background: #FFFFFF;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
@@ -59,6 +59,12 @@ input, select {
 	font-size: 18px;
 	height: 45px;
 	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+textarea {
+	height: 257px;
 }
 
 input[type="radio"] {
@@ -71,16 +77,32 @@ input::placeholder {
 	font-weight: normal;
 }
 
+
 .item span {
-	font-family: Roboto-Bold;
+	font-family: 'Roboto-Bold', sans-serif;
 	font-size: 16px;
 	color: #111111;
 }
 
-button[type="submit"],
+#headerForm  {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+
+button[type="submit"] {
+	justify-self: end;
+	background: #6558C3;
+	border-radius: 4px;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
+	width: 139px;
+	height: 37px;
+}
+
 a.button {
 	padding: 8px 32px;
-	background-color: var(--primary-color);
 	color: white;
 	border-radius: 4px;
 	margin-top: 32px;

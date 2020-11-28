@@ -1,9 +1,12 @@
 {% extends "layoutAdmin.njk" %}
 
 {% block content %}
-	<form class="card" method="POST" action="/instructors">
+	<form class="card" method="POST" action="/admin/recipes">
 		<section class="details">
-			<h1>Criando receita</h1>
+			<div id="headerForm">
+				<h1>Criando receita</h1>
+				<button type="submit">Salvar</button>
+			</div>
 
 			{% include 'admin/recipes/fields.njk' %}
 		</section>
